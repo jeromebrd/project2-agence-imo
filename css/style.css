@@ -1,0 +1,317 @@
+/* font-family: 'Lobster', cursive; FONT LOGO */
+/* reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* general  */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #252525;
+  background: #eee;
+}
+
+h1, h2, h3, h4  {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+strong{
+  color:#f1c40f ;
+  font-weight: 400;
+}
+ul {
+  list-style: none;
+}
+
+em { 
+  color: #555;
+}
+
+/* class */
+
+.container {
+  display: block;
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+.title {
+  color: #252525;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.bg-dark {
+  background: #252525;
+  color: white;
+}
+/* vp + header */
+
+.vp-container  {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+header {
+  background: #252525;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  line-height:1.8rem ;
+  
+  
+}
+
+.vp-logo {
+  margin-bottom: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lobster', cursive;
+  
+  
+}
+
+.vp-logo i {
+  margin-right: 0.5rem;
+  color:#f1c40f;
+  font-size: 1.5rem;
+}
+
+.vp-logo a {
+  font-size: 3rem;
+}
+header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
+header  a {
+  color: white; 
+}
+header ul li a:hover {
+  color:#f1c40f ; 
+}
+
+header ul li {
+  padding: 1rem;
+  
+}
+.vp {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/frame.jpg) center center/cover;
+}
+
+.vp-content {
+  color: white;
+  max-width: 800px;
+  text-align: center;
+
+}
+.vp-content h1 {
+  margin-bottom: 3rem;
+ font-size: 2.8rem;
+}
+
+.vp-content p{
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+/* offer */
+.offer {
+  padding: 10rem 1rem;
+}
+.offer-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  
+}
+
+.offer-elem {
+  background: #fff;
+  margin: 1rem;
+  flex: 1;
+  border: 2px solid #ddd;
+}
+
+.offer-elem-img {
+  width: 100%;
+}
+
+.offer-elem-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-separator {
+  height: 3px;
+  width: 2rem;
+  background: #252525;
+  margin: 0.8rem;
+  
+}
+
+/* who  */
+
+.who  {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 600px;
+}
+
+
+
+.who-content-img {
+  flex: 1;
+  background: url(../images/team.jpg) center center/cover;
+}
+
+.who-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
+  flex: 1;
+}
+
+.who-content-text p{
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.who-content-text h2 {
+  font-size: 2rem;
+}
+
+/* testimonials */
+.testimonials {
+  padding: 5rem 1rem;
+}
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-elem {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+.testimonials-elem-text {
+  padding: 0rem 2rem;
+
+
+}
+.testimonials-elem-text p i {
+  margin: 0.2rem;
+}
+
+.testimonials-elem-profil img {
+  width: 50px;
+  border-radius: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-elem-profil p {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+/* contact */
+
+.contact{
+  padding: 10rem 1rem;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  
+  
+}
+
+.form-contact {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+.form-contact button {
+  background: #f1c40f;
+  color: #fff;
+  padding: 1rem 1.6rem;
+  border: 0;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 2rem auto;
+  cursor: pointer;
+  display: block;
+  ;
+}
+
+.contact button:hover {
+  background: rgb(189, 123, 0);
+}
+
+.contact input {
+  background: #252525;
+  padding: 1rem;
+  border: 0;
+  border-bottom: 1px solid #888;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  outline: 0;
+  color: white;
+  
+}
+
+/* footer */
+footer {
+  background: #555;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
